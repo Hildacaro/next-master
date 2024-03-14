@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 150px;
+  background-color: #105295;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  color: rgb(0, 17, 255);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}

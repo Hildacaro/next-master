@@ -1,0 +1,30 @@
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .cardTeam {
+    flex: 1 0 21%; /* Ocupa el 21% del espacio total, para tener en cuenta el espacio entre las tarjetas */
+    max-width: 21%; /* Ancho máximo para las tarjetas */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin: 1.2%;
+    border-radius: 20px;
+  }
+  
+  .cardTeam img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  
+  .cardTeam h2 {
+    margin: 10px 0;
+  }
+  
+  .cardTeam p {
+    margin: 0;
+  }
