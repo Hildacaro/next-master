@@ -27,7 +27,7 @@ const News = () => {
 					Noticias
 				</h2>
         </div>
-       {/* <Post posts={posts}/> */}
+       <Post posts={posts}/>
     </div>
   );
 }
