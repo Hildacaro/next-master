@@ -18,14 +18,14 @@ const Drawer = ({ children, isOpen, setIsOpen }) => {
           (isOpen ? "translate-x-0" : "-translate-x-full")
         }
       >
-        <article className="relative w-340px max-w-lg pb-10 flex flex-col space-y-6 h-full">
+        <article className="relative w-340px max-w-lg pb-10 flex flex-col space-y-6 h-full" style={{ backgroundColor: "#0B0E34" }}>
           <header className="px-4 py-4 flex items-center justify-between">
             <div className="flex flex-shrink-0 items-center border-right">
 							<Link
                   href="/"
-                  className="text-2xl font-semibold text-white ml-4"
+                  className="text-2xl font-semibold text-white"
                 >
-                  <Image src="/logo1.svg" alt="logo" width={100} height={100} />
+                  <Image src="/logo1.svg" alt="logo" width={150} height={100} />
                 </Link>
             </div>
 

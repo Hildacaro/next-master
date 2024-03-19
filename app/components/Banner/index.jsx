@@ -2,7 +2,7 @@ const Banner = () => {
   return (
     <>
       <div id="home-section" className="bg-lightpink">
-        <div className="mx-auto max-w-9xl pt-1 px-6">
+        <div className="mx-auto pt-1 px-6">
           <img
             src="/grupo.png"
             alt="central"

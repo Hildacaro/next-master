@@ -19,14 +19,15 @@ const News = () => {
     fetchData();
   }, []);
 
+  
   return (
-    <div>
+    <div style={{minHeight: "calc(100vh - 465px)"}}>
       <div className="flex flex-col items-center">
       <h2 className="font-bold text-5xl mt-5 tracking-tight">
 					Noticias
 				</h2>
         </div>
-      <Post posts={posts}/>
+       {/* <Post posts={posts}/> */}
     </div>
   );
 }

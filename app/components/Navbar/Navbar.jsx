@@ -1,7 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import Link from "next/link";
 import React, { useState } from "react";
-import { HiMail } from "react-icons/hi";
 import Drawer from "./Drawer";
 import MobileNavbarData from "./MobileNavbarData";
 import Image from "next/image";
@@ -24,10 +23,10 @@ const Navbar = () => {
       style={{ backgroundColor: "#0B0E34" }}
     >
       <>
-        <div className="mx-auto max-w-7xl p-3 md:p-6 lg:px-8">
+        <div className="mx-auto max-w-9xl p-3 md:p-6 lg:px-8">
           <div className="relative flex h-12 sm:h-20 items-center">
             <div className="flex flex-1 items-center sm:justify-between">
-							{/* LOGO */}
+              {/* LOGO */}
               <div className="flex sm:hidden flex-shrink-0 items-center border-right">
                 <Link
                   href="/"
@@ -61,15 +60,28 @@ const Navbar = () => {
                   ))}
                 </div>
               </div>
-              <div className="gap-6 hidden lg:flex">
-                <div className="flex items-center gap-2">
+              <div className="hidden lg:flex items-center flex-col gap-4">
+                <div className="lg:flex items-center">
                   <Image
-                    src={"/images/Navbar/phone.svg"}
+                    src={"/images/Navbar/phone.png"}
                     alt="phone-image"
                     width={19}
                     height={19}
                   />
-                  <p className="text-lg font-medium text-white">+34 123-4567</p>
+                  <p className="text-base font-normal text-white pl-3">
+                    +34 123-4567
+                  </p>
+                </div>
+                <div className="lg:flex items-center">
+                  <Image
+                    src={"/images/Navbar/email.png"}
+                    alt="email-image"
+                    width={25}
+                    height={20}
+                  />
+                  <p className="text-base font-normal text-white pl-3">
+                    Contacto@refugiadossinfronteras.org
+                  </p>
                 </div>
               </div>
             </div>
@@ -78,11 +90,12 @@ const Navbar = () => {
 
             {/* ICON */}
 
-            <div className="block lg:hidden">
-              <HiMail
-                className="block h-6 w-6"
-                aria-hidden="true"
-                onClick={() => setIsOpen(true)}
+            <div className="block h-6 w-6 lg:hidden" aria-hidden="true" onClick={() => setIsOpen(true)}>
+              <Image
+                src={"/images/Navbar/menu_burger.png"}
+                alt="menu_burger-image"
+                width={25}
+                height={20}
               />
             </div>
 

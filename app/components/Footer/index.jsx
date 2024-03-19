@@ -1,46 +1,49 @@
 "use client";
 import Image from "next/image";
 import Weather from "../weather";
+import Link from "next/link";
+
+const socialNetworks = [
+  {
+    imgSrc: "/images/Footer/twitterX.png",
+    imgAlt: "twitterX",
+    href: "https://twitter.com/yosoyrefugiado"
+  },
+  {
+    imgSrc: "/images/Footer/facebook.png",
+    imgAlt: "facebook",
+    href: "https://www.instagram.com/ongrefugiadossinfronteras/"
+  },
+  {
+    imgSrc: "/images/Footer/instagram.png",
+    imgAlt: "instagram",
+    href: "https://www.instagram.com/ongrefugiadossinfronteras"
+  },
+];
 
 const footer = () => {
   return (
     <div
-      className="text-white text-center mt-0"
+      className="text-white text-center mt-0 w-full"
       style={{ backgroundColor: "#0B0E34" }}
     >
       <div className="mr-auto ml-auto p-4 sm:max-w-96 lg:max-w-full">
         <div className="mt-10 grid gap-10 md:grid-cols-2 lg:gap-10">
 					<div className="grid place-content-center mb-10"> 
             <img src={"/logo1.svg"} alt="logo" className="max-w-80" />
-            <div className="flex justify-center">
-              <Image
-                src={"/images/Footer/insta.svg"}
-                alt={"items.imgSrc"}
-                width={40}
-                height={20}
-              />
-              <Image
-                src={"/images/Footer/insta.svg"}
-                alt={"items.imgSrc"}
-                width={40}
-                height={20}
-              />
-              <Image
-                src={"/images/Footer/insta.svg"}
-                alt={"items.imgSrc"}
-                width={40}
-                height={20}
-              />
-              <Image
-                src={"/images/Footer/insta.svg"}
-                alt={"items.imgSrc"}
-                width={40}
-                height={20}
-              />
+            <div className="flex justify-evenly">
+              {socialNetworks.map((items, index) => (
+                <Link href={items.href} key={index} target="blank">
+                    <Image
+                      src={items.imgSrc}
+                      alt={items.imgAlt}
+                      width={40}
+                      height={30}
+                    />
+                </Link>
+              ))}
             </div>
-
 					</div>
-
           <div className="grid content-center">
 						<div className="flex justify-around">
             <ul className="mb-0">

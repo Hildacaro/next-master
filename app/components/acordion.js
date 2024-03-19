@@ -12,7 +12,7 @@ export default function Acordion({ dataFAQ }) {
   return (
     <>
       <div className="flex flex-col items-center">
-        <h2 className="font-bold text-5xl mt-5 tracking-tight">
+        <h2 className="font-bold text-5xl mt-5 tracking-tight text-center">
           Preguntas frecuentes
         </h2>
       </div>
