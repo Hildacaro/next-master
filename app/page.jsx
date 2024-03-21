@@ -7,7 +7,7 @@ import Map from "./components/Map/index";
 import CardInfo from "./components/Cards/index";
 import Counter from "./components/Counter/index";
 import { Fade } from "react-awesome-reveal";
-import Info from "./components/info/index"; // Fix the casing of the import statement
+import Info from "./components/Info/index"; // Fix the casing of the import statement
 
 export default function Home() {
   return (
