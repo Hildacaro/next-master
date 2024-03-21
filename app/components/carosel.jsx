@@ -1,22 +1,24 @@
 import styles from "../ui/componente.module.css";
+import React from "react";
+
+const photo = new Array(9).fill(null);
 
 export default function Carosel() {
   return (
-    <section id={styles.carousel} >
-      <div className={styles.carousel} >
+    <section id={styles.carousel}>
+      <div className={styles.carousel}>
         <div className={styles.gallery}>
-          <div className={`${styles.item} ${styles.item1}`}></div>
-          <div className={`${styles.item} ${styles.item2}`}></div>
-          <div className={`${styles.item} ${styles.item3}`}></div>
-          <div className={`${styles.item} ${styles.item4}`}></div>
-          <div className={`${styles.item} ${styles.item5}`}></div>
-          <div className={`${styles.item} ${styles.item6}`}></div>
-          <div className={`${styles.item} ${styles.item7}`}></div>
-          <div className={`${styles.item} ${styles.item8}`}></div>
-          <div className={`${styles.item} ${styles.item9}`}></div>
-          <div className={`${styles.item} ${styles.item10}`}></div>
-          <div className={`${styles.item} ${styles.item11}`}></div>
-          <div className={`${styles.item} ${styles.item12}`}></div>
+          {photo.map((_, index) => (
+            <div
+              key={index}
+              className={styles.item}
+              style={{
+                backgroundImage: `url(/images/Carousel/carousel${
+                  index + 1
+                }.jpg)`,
+              }}
+            ></div>
+          ))}
         </div>
       </div>
     </section>

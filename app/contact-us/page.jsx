@@ -1,41 +1,54 @@
 const ComponentContact = () => {
+  const whatsappNumber = "+34 123-4567";
+  const whatsappLink = `https://wa.me/${whatsappNumber}`;
+
   return (
     <div className="flex items-center justify-center h-screen">
       <div
-        className="w-1/4 h-auto"
+        className="h-auto"
         style={{
-          backgroundImage: "url('/Blue-circles.jpg')",
+          backgroundImage: "url('/fondo-blue.jpg')",
           backgroundSize: "cover",
           borderRadius: "20px",
         }}
       >
         <div className="flex justify-between items-center p-8">
-          <h1 className="text-2xl mb-4">
+          <h1 className="text-2xl">
             BANCO DE <br />
             <strong>ALIMENTOS</strong>
             <br />
             INSCRIPCIÓN
           </h1>
-          <img
-            src="/logo1.svg"
-            alt="Logo"
-            className="h-36 w-36 flex-shrink-0"
-          />
+          <img src="/asoc.png" alt="Logo" className="h-40 w-40 flex-shrink-0" />
         </div>
-        <div className="text-black text-center p-8">
+        <div className="text-black text-center p-4">
+          <h1 className="text-xl mb-8">
+            Procedimiento para darse de alta en el Banco de Alimentos de
+            Refugiados Sin Fronteras
+          </h1>
+          <p></p>
           <p>
-            Solo escribir por Whatsapp de lunes a viernes al número 602492982
+            Paso 1: Escribir por Whatsapp de lunes a viernes al número{" "}
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+              +34 123-4567
+            </a>{" "}
+            la siguiente información:
           </p>
-          <p>la siguiente información:</p>
-          <p>Nombres y apellidos completos</p>
-          <p>Número de identificación (DNI, NIE o Pasaporte)</p>
-          <p>Correo electrónico</p>
+
+          <p>- Nombres y apellidos completos</p>
+          <p>- Número de identificación (DNI, NIE o Pasaporte)</p>
+          <p>- Correo electrónico</p>
           <br />
           <p>
-            Deben esperar la respuesta y ser citados para llevar la
-            documentación
+            Paso2: Deben esperar la respuesta para ser citados y llevar la
+            documentación los días viernes de 5:00 pm a 8:00 pm
           </p>
-          <p>solicitada en original y copia de manera presencial</p>
+          <p>
+            deberá asistir a nuestra sede ubicada en Matilde Lanasa, 26 donde
+            les haremos formalmente el registro
+          </p>
+          <p></p>
+          <br />
           <br />
           <p>
             Solo respondemos mensajes por whatsapp de

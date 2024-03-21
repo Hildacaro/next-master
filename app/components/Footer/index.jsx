@@ -28,18 +28,13 @@ const footer = () => {
       style={{ backgroundColor: "#0B0E34" }}
     >
       <div className="mr-auto ml-auto p-4 sm:max-w-96 lg:max-w-full">
-        <div className="mt-10 grid gap-10 md:grid-cols-2 lg:gap-10">
+        <div className="mt-4 grid gap-10 md:grid-cols-2 lg:gap-10">
 					<div className="grid place-content-center mb-10"> 
             <img src={"/logo1.svg"} alt="logo" className="max-w-80" />
             <div className="flex justify-evenly">
               {socialNetworks.map((items, index) => (
                 <Link href={items.href} key={index} target="blank">
-                    <Image
-                      src={items.imgSrc}
-                      alt={items.imgAlt}
-                      width={40}
-                      height={30}
-                    />
+                    <Image src={items.imgSrc} alt={items.imgAlt} width={40} height={30}/>
                 </Link>
               ))}
             </div>
@@ -48,23 +43,23 @@ const footer = () => {
 						<div className="flex justify-around">
             <ul className="mb-0">
               <li>
-                <a href="#empresa" className="text-white">
-                  Empresa
+                <a href="/about-us" className="text-white">
+                  Sobre Nosotros
                 </a>
               </li>
               <li>
-                <a href="#equipo" className="text-white">
-                  Nosotras
+                <a href="/news" className="text-white">
+                  Prensa
                 </a>
               </li>
               <li>
-                <a href="#galeria" className="text-white">
-                  Expo
+                <a href="/contact-us" className="text-white">
+                  Inscripción
                 </a>
               </li>
               <li>
-                <a href="#!" className="text-white">
-                  Obras
+                <a href="/faq" className="text-white">
+                  Preguntas
                 </a>
               </li>
             </ul>
