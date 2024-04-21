@@ -18,8 +18,7 @@ const Banner = () => {
         <img
           src="/banco_de_alimentos_logo.png"
           alt="Logo"
-          className="mx-auto my-auto block"
-          style={{ maxWidth: "70%", maxHeight: "90%" }}
+          className="mx-auto my-auto block md:max-h-[90%]"
         />
       </div>
     </>

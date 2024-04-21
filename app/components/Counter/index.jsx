@@ -26,39 +26,35 @@ const Counter = () => {
   });
 
   return (
-    <div
-      className="relative flex flex-col items-center justify-center min-h-screen text-gray-700"
-      style={{ height: "50vh" }}
-    >
-      <div className="absolute inset-0 style={{ height: '50vh' }}">
+    < >
+      <div
+        className="h-60 md:h-80"
+        style={{
+          backgroundImage: "url(kg.jpg)",
+          backgroundSize: "cover",
+          opacity: 0.3,
+        }}
+      ></div>
+      <div className="flex items-center justify-center mt-[-200px] md:mt-[-280px]">
         <div
-          className="absolute inset-0"
+          ref={ref}
           style={{
-            backgroundImage: "url(kg.jpg)",
-            backgroundSize: "cover",
-            opacity: 0.3,
+            textAlign: "center",
+            fontWeight: "bold",
+            fontFamily: "Montserrat",
+            zIndex: 10,
           }}
-        ></div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <div
-            ref={ref}
-            style={{
-              textAlign: "center",
-              fontSize: "5rem",
-              fontWeight: "bold",
-              fontFamily: "Montserrat",
-              zIndex: 10,
-            }}
-          >
-            <p className="text-blue-900 font-extrabold">
-              Hemos Repartido más de
-            </p>
-            <animated.span>{number.to((val) => Math.floor(val))}</animated.span>
-            <p style={{ color: "#105295" }}>Kg de Alimentos</p>
-          </div>
+        >
+          <p className="text-blue-900 font-extrabold text-3xl md:text-5xl">
+            Hemos Repartido más de
+          </p>
+          <animated.span className="text-7xl md:text-9xl">
+            {number.to((val) => Math.floor(val))}
+          </animated.span>
+          <p className="text-blue-900 font-extrabold text-5xl" style={{ color: "#105295" }}>Kg de Alimentos</p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -19,7 +19,7 @@ export default function Acordion({ dataFAQ }) {
       </div>
       <div className="flex flex-wrap justify-center gap-3 py-8 text-lg leading-6 text-gray-900 md:gap-8">
         {dataFAQ.map((data, index) => (
-          <div key={data.id} className="w-6/12 space-y-3">
+          <div key={data.id} className="px-6 sm:w-6/12 space-y-4">
             <Fade
               key={data.id}
               direction={"up"}

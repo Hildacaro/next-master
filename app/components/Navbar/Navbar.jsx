@@ -14,6 +14,8 @@ const navigation = [
 ];
 
 const Navbar = () => {
+  const whatsappNumber = "+341234567";
+  const whatsappLink = `https://wa.me/${whatsappNumber}`;
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -46,7 +48,7 @@ const Navbar = () => {
 
               {/* LINKS */}
 
-              <div className="hidden lg:flex items-center border-right ">
+              <div className="hidden lg:flex lg:items-center lg:border-right">
                 <div className="flex justify-end space-x-4">
                   {navigation.map((item) => (
                     <Link
@@ -69,7 +71,9 @@ const Navbar = () => {
                     height={19}
                   />
                   <p className="text-base font-normal text-white pl-3">
-                    +34 123-4567
+                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                    +34 1234567
+                  </a>
                   </p>
                 </div>
                 <div className="lg:flex items-center">
@@ -80,7 +84,7 @@ const Navbar = () => {
                     height={20}
                   />
                   <p className="text-base font-normal text-white pl-3">
-                    Contacto@refugiadossinfronteras.org
+                  <a href="mailto:Contacto@refugiadossinfronteras.org">Contacto@refugiadossinfronteras.org</a>
                   </p>
                 </div>
               </div>

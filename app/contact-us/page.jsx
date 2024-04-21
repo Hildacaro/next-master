@@ -1,5 +1,5 @@
 const ComponentContact = () => {
-  const whatsappNumber = "+34 123-4567";
+  const whatsappNumber = "+341234567";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (

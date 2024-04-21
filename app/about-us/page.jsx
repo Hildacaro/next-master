@@ -4,6 +4,21 @@ import Team from "../components/team";
 import { fetchTeam } from "../lib/data";
 import { Fade } from "react-awesome-reveal";
 
+const dataVisionMision = [
+  {
+    imgSrc: "/mision.png",
+    title: "Mision",
+    description:
+      "Como Asociación Civil para Refugiados en España nuestra misión es proteger y defender los derechos humanos de los refugiados, migrantes y desplazados por crisishumanitarias y conflictos bélicos en sus países deorigen, brindándoles ayuda humanitaria y asistencia en su proceso de integración en la sociedad española.Ofrecemos asesoramiento legal en materia de asilo yrefugio, y atención psicológica para mitigar los efectosnegativos de la migración, proporcionamos capacitación y formación en habilidades laborales para optimizar el acceso a la empleabilidad. Como entidad acreditada como Banco de Alimentos de Madrid, distribuimos alimentospara satisfacer las necesidades básicas de las personas en situaciones de vulnerabilidad. También promovemos la cultura y la integración sociocultural de los refugiadosa través de la organización de eventos y actividadesculturales con músicos refugiados.",
+  },
+  {
+    imgSrc: "/vision.png",
+    title: "Vision",
+    description:
+      "Como Asociación Civil para Refugiados en España nuestra misión es proteger y defender los derechos humanos de los refugiados, migrantes y desplazados por crisishumanitarias y conflictos bélicos en sus países de origen, brindándoles ayuda humanitaria y asistencia en su proceso de integración en la sociedad española.Ofrecemos asesoramiento legal en materia de asilo yrefugio, y atención psicológica para mitigar los efectosnegativos de la migración, proporcionamos capacitación y formación en habilidades laborales para optimizar el acceso a la empleabilidad. Como entidad acreditada como Banco de Alimentos de Madrid, distribuimos alimentos para satisfacer las necesidades básicas de las personas en situaciones de vulnerabilidad. También promovemos lacultura y la integración sociocultural de los refugiadosa través de la organización de eventos y actividadesculturales con músicos refugiados.",
+  }
+];
+
 const OurTeamPage = () => {
   const [team, setTeam] = useState([]);
   useEffect(() => {
@@ -53,82 +68,31 @@ const OurTeamPage = () => {
             triggerOnce={true}
           >
             <div className="grid gap-12 ">
-              <div className="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
+              {dataVisionMision.map(data => (
+
+              <div key={data.title} className="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
                 <img
-                  src="/mision.png"
-                  alt="art cover"
+                  src={data.imgSrc}
+                  alt={data.title}
                   loading="lazy"
                   width="50"
                   height="50"
-                  className="ml-28h-56 sm:h-full w-full sm:w-3/12 object-cover object-top rounded-lg transition duration-500 group-hover:rounded-xl ml-9"
+                  className="ml-28h-56 sm:h-full w-full sm:w-3/12 object-cover object-top rounded-lg transition duration-500 group-hover:rounded-xl sm:ml-9"
                 />
                 <div className="sm:w-7/12 pl-0 p-5">
                   <div className="space-y-2">
                     <div className="space-y-4">
                       <h4 className="text-4xl font-semibold text-cyan-900 ml-4">
-                        Misión
+                        {data.title}
                       </h4>
                       <p className="text-gray-600 text-lg text-justify ml-5">
-                        Como Asociación Civil para Refugiados en España nuestra
-                        misión es proteger y defender los derechos humanos de
-                        los refugiados, migrantes y desplazados por crisis
-                        humanitarias y conflictos bélicos en sus países de
-                        origen, brindándoles ayuda humanitaria y asistencia en
-                        su proceso de integración en la sociedad española.
-                        Ofrecemos asesoramiento legal en materia de asilo y
-                        refugio, y atención psicológica para mitigar los efectos
-                        negativos de la migración, proporcionamos capacitación y
-                        formación en habilidades laborales para optimizar el
-                        acceso a la empleabilidad. Como entidad acreditada como
-                        Banco de Alimentos de Madrid, distribuimos alimentos
-                        para satisfacer las necesidades básicas de las personas
-                        en situaciones de vulnerabilidad. También promovemos la
-                        cultura y la integración sociocultural de los refugiados
-                        a través de la organización de eventos y actividades
-                        culturales con músicos refugiados.
+                        {data.description}
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="p-1 rounded-xl group sm:flex bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
-                <div className="sm:w-7/12 p-5 ml-20">
-                  <div className="space-y-2">
-                    <div className="space-y-4">
-                      <h4 className="text-4xl font-semibold text-cyan-900">
-                        Visión
-                      </h4>
-                      <p className="text-gray-600 text-lg text-justify">
-                        Ser una organización líder en la promoción de los
-                        derechos humanos de los refugiados, migrantes y
-                        desplazados en España y en el mundo, proporcionando un
-                        apoyo integral en su proceso de integración en la
-                        sociedad del país de acogida. Queremos ser reconocidos
-                        como una organización comprometida en brindar ayuda
-                        humanitaria, formación y capacitación para mejorar la
-                        empleabilidad, asesoramiento legal y atención
-                        psicológica de alta calidad a las personas refugiadas.
-                        Aspiramos a seguir siendo una entidad acreditada como
-                        Banco de Alimentos, distribuyendo alimentos para
-                        satisfacer las necesidades básicas de las personas
-                        vulnerables en todo el mundo. Además, nos esforzamos por
-                        fomentar la cultura y la integración sociocultural de
-                        los refugiados a través de eventos y actividades
-                        culturales con músicos refugiados, contribuyendo a la
-                        construcción de una sociedad más diversa e inclusiva.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <img
-                  src="/vision.png"
-                  alt="art cover"
-                  loading="lazy"
-                  width="1000"
-                  height="667"
-                  className="h-56 sm:h-full w-full sm:w-3/12 object-cover object-top rounded-lg transition duration-500 group-hover:rounded-xl flex sm:flex-row-reverse ml-16"
-                />
-              </div>
+              ))}
             </div>
           </Fade>
         </div>

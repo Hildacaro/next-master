@@ -2,13 +2,13 @@
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
 
-const info = () => {
+const Conference = () => {
   return (
     <div className="relative" id="info-section">
-      <div className="mx-auto max-w-7xl lg:pt-20 sm:pb-24 px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 my-16 space-x-5">
+      <div className="mx-auto max-w-7xl px-6 sm:pb-10  lg:pt-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 mt-20 space-x-5">
           <div className="col-span-6 flex justify-start">
-            <Image src="/colegio.jpg" alt="nothing" width={636} height={808} />
+            <Image src="/colegio.jpg" alt="colegio" width={636} height={600} />
           </div>
           <div className="col-span-6 flex flex-col justify-center">
             <Fade
@@ -29,8 +29,8 @@ const info = () => {
               damping={1e-1}
               triggerOnce={true}
             >
-              <h3 className="text-3xl lg:text-5xl font-semibold text-blue-900 text-start">
-                LLegamos a la comunidad.
+              <h3 className="text-4xl lg:text-3xl font-semibold text-blue-900 text-start">
+                LLegamos a la comunidad
               </h3>
             </Fade>
             <Fade
@@ -72,4 +72,4 @@ const info = () => {
   );
 };
 
-export default info;
+export default Conference;

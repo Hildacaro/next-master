@@ -50,7 +50,7 @@ const cardData = [
 
 const Features = () => {
   return (
-    <section className="flex justify-center lg:pt-[120px] pb-12 lg:pb-[90px]  bg-gray-100">
+    <section className="flex justify-center">
       <div className="container">
         <Fade
           direction={"up"}
@@ -59,10 +59,10 @@ const Features = () => {
           damping={1e-1}
           triggerOnce={true}
         >
-          <div className="flex flex-wrap -mx-4">
+          <div className="flex flex-wrap -mx-4 mt-8">
             <div className="w-full px-4">
-              <div className="text-center mx-auto mb-12 lg:mb-20 max-w-[510px]">
-                <h2 className="text-3xl sm:text-4xl md:text-[50px] text-blue-900 mb-4 font-extrabold">
+              <div className="text-center mx-auto  max-w-[510px]">
+                <h2 className="text-3xl sm:text-4xl md:text-[50px] text-blue-900 font-extrabold">
                   Te Apoyamos!
                 </h2>
                 <p className="text-lg text-body-color font-extrabold">
@@ -75,7 +75,7 @@ const Features = () => {
             {cardData.map((items, i) => (
               <div key={i} className="w-full md:w-1/2 lg:w-1/3 px-4">
                 <div className="border border-blue-900 border-1 p-1 md:px-7 xl:px-10 rounded-[20px] bg-white hover:shadow-lg mb-8 h-[406px]">
-                  <div className="w-full h-40 flex items-center justify-center bg-primary rounded-full mb-6">
+                  <div className="w-full h-40 flex items-center justify-center bg-primary rounded-full md:mb-6">
                     <Image
                       className="img-feature"
                       src={items.imgSrc}

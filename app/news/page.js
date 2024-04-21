@@ -23,7 +23,7 @@ const News = () => {
   return (
     <div style={{ minHeight: "calc(100vh - 441px)" }}>
       <div className="flex flex-col items-center">
-        <h2 className="font-bold text-blue-900 text-5xl mt-7 tracking-tight">
+        <h2 className="font-bold text-blue-900 text-4xl md:text-5xl mt-7 tracking-tight">
           Nuestras Noticias
         </h2>
       </div>

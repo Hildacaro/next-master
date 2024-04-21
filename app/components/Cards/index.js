@@ -18,8 +18,8 @@ const dataInfo = [
 
 const CardInfo = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-10 text-gray-700md:p-20">
-      <div className="flex flex-wrap items-center justify-center w-full max-w-7xl mt-8">
+    <div className="flex flex-col items-center justify-center p-10 sm:p-20 text-gray-700">
+      <div className="flex flex-wrap items-center justify-center w-full max-w-7xl">
         {dataInfo.map((data, index) =>
           index % 2 === 0 ? (
             <div
@@ -27,7 +27,7 @@ const CardInfo = () => {
               className="flex flex-col flex-grow mt-8 overflow-hidden bg-white rounded-lg shadow-lg lg:w-2/6"
             >
               <div
-                className="flex flex-col items-center p-10 bg-gray-200"
+                className="flex flex-col items-center p-10"
                 style={{ backgroundColor: "#1A94F3" }}
               >
                 <div className="flex items-center text-center">

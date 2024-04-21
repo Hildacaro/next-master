@@ -5,21 +5,21 @@ import Features from "./components/Features/index";
 import Gallery from "./components/Gallery/index";
 import Map from "./components/Map/index";
 import CardInfo from "./components/Cards/index";
-import Counter from "./components/Counter/index";
+import Counter from "./components/Counter";
 import { Fade } from "react-awesome-reveal";
-import Info from "./components/Info/index"; // Fix the casing of the import statement
+import Conference from "./components/Conference";
 
 export default function Home() {
   return (
     <main>
       <Banner />
-      <Counter finalValue={1000000} />
       <Fade direction={"up"} delay={200} cascade triggerOnce={true}>
         <CardInfo />
       </Fade>
       <Features />
+      <Counter finalValue={1000000} />
       <Fade direction={"up"} delay={200} cascade triggerOnce={true}>
-        <Info />
+        <Conference />
       </Fade>
       <Gallery />
       <Map />
