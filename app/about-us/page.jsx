@@ -36,7 +36,7 @@ const OurTeamPage = () => {
 
   return (
     <>
-      <div className="py-16 bg-gradient-to-br ">
+      <div className="py-16 bg-gradient-to-br">
         <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
           <Fade
             direction={"up"}
@@ -46,7 +46,7 @@ const OurTeamPage = () => {
             triggerOnce={true}
           >
             <div className="mb-12 space-y-2 text-center">
-              <h2 className="text-3xl text-blue-900  font-extrabold md:text-4xl mb-8">
+              <h2 className="text-3xl text-blue-900 font-extrabold md:text-4xl mb-8">
                 Somos Refugiados Sin Fronteras
               </h2>
               <span className="m-8 text-xl md:text-2xl text-justify block">
@@ -67,7 +67,7 @@ const OurTeamPage = () => {
             damping={1e-1}
             triggerOnce={true}
           >
-            <div className="grid gap-12 ">
+            <div className="grid gap-12">
               {dataVisionMision.map(data => (
 
               <div key={data.title} className="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
@@ -77,7 +77,7 @@ const OurTeamPage = () => {
                   loading="lazy"
                   width="50"
                   height="50"
-                  className="ml-28h-56 sm:h-full w-full sm:w-3/12 object-cover object-top rounded-lg transition duration-500 group-hover:rounded-xl sm:ml-9"
+                  className="ml-28h-56 w-full object-cover object-top rounded-lg transition duration-500 group-hover:rounded-xl h-1/3 w-1/3 sm:ml-9 lg:h-1/2 lg:w-2/5 xl:h-full xl:w-3/12"
                 />
                 <div className="sm:w-7/12 pl-0 p-5">
                   <div className="space-y-2">

@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 const Conference = () => {
   return (
     <div className="relative" id="info-section">
-      <div className="mx-auto max-w-7xl px-6 sm:pb-10  lg:pt-20">
+      <div className="mx-auto max-w-7xl px-6 sm:pb-10 lg:pt-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 mt-20 space-x-5">
           <div className="col-span-6 flex justify-start">
             <Image src="/colegio.jpg" alt="colegio" width={636} height={600} />

@@ -52,7 +52,7 @@ const CardInfo = () => {
                 </div>
               </div>
               <div className="flex items-center justify-center p-10 text-center">
-                <p className="text-sm font-bold "> {data.description} </p>
+                <p className="text-sm font-bold"> {data.description} </p>
               </div>
             </div>
           )

@@ -52,7 +52,7 @@ const PostList = ({
               fontWeight === "normal"
                 ? "line-clamp-2 font-medium  tracking-normal text-black"
                 : "font-semibold leading-snug tracking-tight",
-              "mt-2    dark:text-white"
+              "mt-2 dark:text-white"
             )}
           >
             <Link href={post.URL} target="_blank">

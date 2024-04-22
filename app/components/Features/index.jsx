@@ -61,7 +61,7 @@ const Features = () => {
         >
           <div className="flex flex-wrap -mx-4 mt-8">
             <div className="w-full px-4">
-              <div className="text-center mx-auto  max-w-[510px]">
+              <div className="text-center mx-auto max-w-[510px]">
                 <h2 className="text-3xl sm:text-4xl md:text-[50px] text-blue-900 font-extrabold">
                   Te Apoyamos!
                 </h2>
@@ -74,7 +74,7 @@ const Features = () => {
           <div className="flex flex-wrap p-10">
             {cardData.map((items, i) => (
               <div key={i} className="w-full md:w-1/2 lg:w-1/3 px-4">
-                <div className="border border-blue-900 border-1 p-1 md:px-7 xl:px-10 rounded-[20px] bg-white hover:shadow-lg mb-8 h-[406px]">
+                <div className="border border-blue-900 border-1 p-1 md:px-7 xl:px-10 rounded-[20px] bg-white hover:shadow-lg mb-8 sm:h-[500px] lg:h-[520px] xl:h-[430px]">
                   <div className="w-full h-40 flex items-center justify-center bg-primary rounded-full md:mb-6">
                     <Image
                       className="img-feature"
@@ -84,7 +84,7 @@ const Features = () => {
                       height={100}
                     />
                   </div>
-                  <h4 className="font-extrabold text-xl text-blue-900 p-1 ">
+                  <h4 className="font-extrabold text-xl text-blue-900 p-1">
                     {items.heading}
                   </h4>
                   <p className="text-body-color text-sm font-bold">

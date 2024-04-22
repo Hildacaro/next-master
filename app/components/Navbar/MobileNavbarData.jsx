@@ -12,7 +12,7 @@ const MobileNavbarData = ({ data }) => {
               <Link
                 key={item.name}
                 href={item.href}
-                className=" hover:bg-gray-700 hover:text-purple block  py-2 rounded-md text-base font-medium"
+                className="hover:bg-gray-700 hover:text-purple block py-2 rounded-md text-base font-medium"
                 aria-current={item.current ? "page" : undefined}
               >
                 {item.name}
